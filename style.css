@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", Arial, Helvetica;
+}
+
+body {
+  background-color: #0e0e35;
+  color: #04eebb;
+  margin: 0.9rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 1rem;
+  border-bottom: 2px groove #04eebb;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.nav-header {
+  display: flex;
+  width: 100%;
+  min-height: 3rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-header {
+  width: 4rem;
+  height: 1.4;
+  background-color: #0e0e35;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.txt-btn-header {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page-title {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.easy {
+  font-style: italic;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.kv {
+  color: #f1f124;
+}
+
+.txt-apresentation,
+.result {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-nav {
+  width: 7rem;
+  background-color: #0e0e35;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  gap: 2rem;
+  transition: 0.4s;
+}
+.btn-nav:hover {
+  border: 2px solid #ffffff;
+}
+
+.txt-link {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 2rem auto;
+  text-align: center;
+}
+
+.medidas {
+  margin-top: 3rem;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt-label {
+  font-size: 1.7rem;
+  color: #04eebb;
+  margin-right: 1rem;
+}
+
+.input-field {
+  background-color: #0e0e35;
+  color: white;
+  width: 9rem;
+  border: none;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #04eebb;
+  text-align: left;
+}
+
+.explication {
+  margin-top: 2rem;
+}
+
+.text-explication {
+  text-align: center;
+  color: #ffffff;
+}
+
+.locals-of-exame {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-local {
+  background-color: #0e0e35;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  width: 5rem;
+  height: 2rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-calc {
+  display: flex;
+  font-size: 1.3rem;
+  width: 7rem;
+  height: 1.9rem;
+  background-color: #04eebb;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #0e0e35;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-calc:hover {
+  border: 2px solid #ffffff;
+}
+
+.btn-reset {
+  font-size: 1.3rem;
+  width: 5rem;
+  height: 1.9rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #0e0e35;
+  margin: 0.5rem auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+@media (max-width: 790px) {
+  .page-title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .navigation {
+    display: flex;
+    width: 100vw;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .btn-nav {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-title {
+    display: flex;
+    font-size: 0.8rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.7rem;
+  }
+
+  .txt-apresentation,
+  .result {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 2rem 1rem;
+  }
+
+  .navigation {
+    display: flex;
+    width: 100vw;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .btn-nav {
+    width: 10rem;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .txt-label {
+    font-size: 1.5rem;
+    color: #04eebb;
+    margin-right: 1.5rem;
+  }
+
+  .input-field {
+    background-color: #0e0e35;
+    color: white;
+    width: 7rem;
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #04eebb;
+    text-align: left;
+  }
+  .btn-calc {
+    display: flex;
+    font-size: 1.3rem;
+    width: 7rem;
+    height: 1.7rem;
+    background-color: #04eebb;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #0e0e35;
+  }
+}
+@media (max-width: 290px) {
+  .page-title {
+    display: flex;
+    font-size: 0.6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.7rem;
+  }
+
+  .txt-apresentation {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2rem 1rem;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 0 0.5rem;
+    text-align: center;
+  }
+
+  .medidas {
+    margin-top: 0.1rem;
+  }
+
+  .informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .txt-label {
+    font-size: 1.2rem;
+    color: #04eebb;
+    margin-right: 1.5rem;
+  }
+
+  .input-field {
+    background-color: #0e0e35;
+    color: white;
+    width: 7rem;
+    border: none;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #04eebb;
+    text-align: left;
+  }
+  .btn-calc {
+    display: flex;
+    font-size: 1.1rem;
+    width: 6rem;
+    height: 1.7rem;
+    background-color: #04eebb;
+    margin: 4rem auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #0e0e35;
+  }
+}
