@@ -45,8 +45,8 @@ function calcColumn() {
   const kvApCol = 2 * medidaAp + defaultEquipamento;
   const kvPerfilCol = 2 * medidaPerfil + defaultEquipamento;
 
-  const masApColuna = kvApCol * 1.2;
-  const masPerfilColuna = kvPerfilCol * 1.2;
+  const masApColuna = kvApCol * 0.8 * 0.85;
+  const masPerfilColuna = kvPerfilCol * 0.8 * 0.85;
 
   document.getElementById(
     "apresentation-and-result"
